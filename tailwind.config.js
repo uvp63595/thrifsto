@@ -1,0 +1,45 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        black: {
+          900: "#000000",
+          "900_7f": "#0000007f",
+          "900_4c": "#0000004c",
+          "900_f4": "#000000f4",
+          "900_e5": "#000000e5",
+          "900_b2": "#000000b2",
+          "900_f2": "#000000f2",
+          "900_0c": "#0000000c",
+          "900_3f": "#0000003f",
+          "900_99": "#00000099",
+          "900_33": "#00000033",
+          "900_19": "#00000019",
+        },
+        gray: { 100: "#f5f5f5", 400: "#b3b3b3", 600: "#808080" },
+        amber: { 600: "#ffb700", "600_e5": "#ffb700e5" },
+        white: { A700: "#ffffff" },
+        red: { A700: "#ff0000" },
+      },
+      fontFamily: {
+        poppins: "Poppins",
+        inter: "Inter",
+        dhonjakost: "DhonJako St",
+        stoke: "Stoke",
+        ubuntu: "Ubuntu",
+        dhyana: "Dhyana",
+        insaniburger: "Insaniburger",
+        arial: "Arial",
+      },
+      boxShadow: { bs: "0px 4px  4px 0px #0000003f" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
